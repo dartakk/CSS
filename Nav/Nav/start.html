@@ -6,19 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>Navbar</title>
         <style>
-            body {
-                background-color: #30363d;
-            }
+        nav {
+            background-color:#30363d;
+        }
         nav > div {
             display: inline-block;
-            background-color:#30363d;
             color: aliceblue;
         }
         nav ul li {
             display: inline-block;
             color: aliceblue;
             margin-right: 10px; 
-            
         }
         nav h1, nav ul {
             display: inline-block;
@@ -28,14 +26,34 @@
             text-decoration: none;
             color: grey
         }
-        nav div button:hover {
+        nav ul li a[href="white"] {
+            color: white;
+        }
+        nav div:nth-child(2) button {
+            background-color: transparent;
+            border: 1px solid green;
+            color: green;
+            border-radius: 5px;
+        }
+        nav div:nth-child(2) button:hover {
             background-color: green;
             color: white;
         }
-        nav ul li a[href="white"] {
-            color: white;
-            }
-            
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: #30363d;
+        }
+        nav > div input[type="text"] {
+            border-radius: 5px;
+        }
         </style>
     </head>
 
@@ -46,14 +64,21 @@
             <ul>
               <li><a href="white">Home</a></li>
               <li><a href="">Link</a></li>
-              <li><a href="">Dropdown</a></li>
+              <li class="dropdown">
+                <a href="#">Dropdown</a>
+                <div class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </li>
               <li><button disabled>Disabled</button></li>
             </ul>
           </div>
           <div>
             <input type="text" placeholder="Search"/>
             <button>Search</button>
-          </div>
+          </div>       
         </nav>
     </body>
 </html>
