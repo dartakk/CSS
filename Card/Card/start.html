@@ -6,23 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>Card</title>
         <style>
-
+        .container{
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        .img,
+        header,
+        .first,
+        .second,
+        .third,
+        .end {
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 0;
+        }
+        .img {
+            display: block;
+        }
         </style>
     </head>
 
     <body>
+        <div class="container">
+        <img class="img" src="" alt="Image cap">
             <header>
-                <img class="" src="" alt="Image cap">
                   <h1 class="card-title">Card title</h1>
                   <h3 class="card-text">Some quick example text to build <br>on the card title and make up the <br>bulk of the card's content.</h3>
             </header>
             <section>
-                <h3>An item</h3>
-                <h3>A second item</h3>
-                <h3>A third Item</h3>
+                <h3 class="first">An item</h3>
+                <h3 class="second">A second item</h3>
+                <h3 class="third">A third item</h3>
           </section>
-          <footer>
+          <footer class="end">
             <a href="">Card link</a>  <a href="">Another link</a>
         </footer>
+    </div>
     </body>
 </html>
