@@ -1,0 +1,46 @@
+
+.calcolatrice {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,100px);
+    display: grid;
+    border: solid gray;
+    border-radius: 10px ;
+}
+.risultato {
+    grid-column: span 4;
+    grid-row: span 1; 
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(54, 49, 66);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 30px;
+}
+.operazione{
+    background-color: rgb(156, 154, 150);
+    grid-column: span 1;
+    grid-row: span 1;
+    font-size: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.altro {
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: span 1;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uguale {
+    grid-column: span 1;
+    grid-row: span 4;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(214, 39, 39)
+}
