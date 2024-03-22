@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Navbar</title>
+        <style>
+        nav {
+            background-color:#30363d;
+        }
+        nav > div {
+            display: inline-block;
+            color: aliceblue;
+        }
+        nav ul li {
+            display: inline-block;
+            color: aliceblue;
+            margin-right: 10px; 
+        }
+        nav h1, nav ul {
+            display: inline-block;
+            color: aliceblue;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: grey
+        }
+        nav ul li a[href="white"] {
+            color: white;
+        }
+        nav div:nth-child(2) button {
+            background-color: transparent;
+            border: 1px solid green;
+            color: green;
+            border-radius: 5px;
+        }
+        nav div:nth-child(2) button:hover {
+            background-color: green;
+            color: white;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: #30363d;
+        }
+        nav > div input[type="text"] {
+            border-radius: 5px;
+        }
+        .menu-hamburger {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        nav {
+            background-color: transparent;
+        }
+        nav > div {
+            display: none;
+        }
+
+        .menu-hamburger {
+            display: block;
+        }
+
+        .menu-hamburger .icon {
+            display: block;
+            width: 30px;
+            height: auto;
+            background-color: #fff;
+            margin: 6px 0;
+        }
+    }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+          <div>
+            <h1>Navbar</h1>
+            <ul>
+              <li><a href="white">Home</a></li>
+              <li><a href="">Link</a></li>
+              <li class="dropdown">
+                <a href="#">Dropdown</a>
+                <div class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </li>
+              <li><button disabled>Disabled</button></li>
+            </ul>
+          </div>
+          <div>
+            <input type="text" placeholder="Search"/>
+            <button>Search</button>
+            </div>
+          </div>
+          <div class="menu-hamburger">
+            <img src="/CSS/RepoEsercizi/CSS/NavResponsive/Nav/icons8-menu-48.png" alt="Menu" class="icon">
+        </div>
+        </nav>
+    </body>
+</html>
