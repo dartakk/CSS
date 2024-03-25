@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table {
+    border: 1px solid #263238;
+    width: 50%;
+}
+caption {
+    color: #263238;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+}
+thead {
+background-color: #455a64;
+color: white;
+font-weight: 700;
+}
+.color1{
+    color: #eceff1;
+}
+.color2 {
+    color: #b0bec5
+}
+tfoot tr {
+    color: #78909c;
+    font-weight: 800;
+}
+.entrate {
+    color: #003300;
+}
+.uscite {
+    color: #7f0000;
+}
+.number {
+    text-align: right
+}
+tfoot tr {
+    background-color: #78909c;
+    color: #263238;
+    font-weight: 800;
+}
