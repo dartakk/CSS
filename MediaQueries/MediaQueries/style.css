@@ -23,29 +23,16 @@
     height: auto;
     margin-bottom: 10px; 
 }
-@media only screen and (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-        max-width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .cat-image {
-        flex: 1 0 50%;
-        margin: 0 10px 20px;
+@media screen and (max-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
-@media only screen and (max-width: 375px) {
-    .container {
-        padding: 0 10px;
-    }
 
-    .cat-image {
-        flex: 1 0 80%;
-        margin: 0 0 20px;
-    }
-
+@media screen and (max-width: 375px) {
     .container {
-        flex-direction: column; 
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
